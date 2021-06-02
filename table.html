@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Practice</title>
+    <style>
+        table, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td{
+            text-align: center;
+            padding: 20px;
+        }
+
+        .fcolor {
+            background-color:rgba(169, 169, 169, 0.863)  ;
+        }
+
+        .mcolor {
+            background-color: rgba(170, 246, 246, 0.959);
+        }
+
+        .tcolor {
+            background-color: rgba(250, 245, 215, 0.918);
+        }
+
+        .acolor {
+            background-color: rgb(240, 203, 208);
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Table with column and row spanned:</caption>
+        <tr>
+            <td class="acolor">Logo</td>
+            <td colspan="3" class="tcolor">Top Menu</td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="tcolor">Side Menu</td>
+            <td class="mcolor">World News</td>
+            <td class="mcolor">Financial</td>
+            <td rowspan="2" class="acolor">List of Ads</td>
+        </tr>
+        <tr>
+            <td class="mcolor">Technology</td>
+            <td class="mcolor">Sports</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="fcolor">Footer</td>
+        </tr>
+    </table>
+</body>
+</html>
